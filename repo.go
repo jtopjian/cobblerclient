@@ -44,7 +44,7 @@ type Repo struct {
   Owners                 []string               `mapstructure:"owners"`
   Proxy                  string                 `mapstructure:"proxy"`
   RpmList                []string               `mapstructure:"rpm_list"`
-  YumOpts                map[string]interface{} `mapstructure:"yumopts"`
+  //YumOpts                map[string]interface{} `mapstructure:"yumopts"`
 }
 
 // GetRepos returns all repos in Cobbler.
