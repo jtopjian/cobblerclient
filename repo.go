@@ -42,7 +42,7 @@ type Repo struct {
 	MirrorLocally   bool     `mapstructure:"mirror_locally"`
 	Name            string   `mapstructure:"name"`
 	Owners          []string `mapstructure:"owners"`
-	Proxy           string   `mapstructure:"proxy"`
+	Proxy           string   `mapstructure:"proxy" cobbler:"newfield"`
 	RpmList         []string `mapstructure:"rpm_list"`
 	//YumOpts                map[string]interface{} `mapstructure:"yumopts"`
 }
